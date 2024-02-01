@@ -3,23 +3,18 @@ import time
 # from selenium import webdriver
 from selenium.webdriver.common.by import By
 # # from pageObjects.CheckoutPage import CheckOutPage
-# # from pageObjects.HomePage import HomePage
+from pageObjects.HomePage import HomePage
 # from selenium.webdriver.support import expected_conditions as EC
 
 
 from tests.utilities.BaseClass import BaseClass
 
 
-#@pytest.mark.usefixtures("setup")  # kanei dia8esimo to fixture pou periexei thn setup, se epomeno vhma feugei apo edw gia na  xrhsimoopoitai me klhromnomikothta apo polles klaseis
 class TestOne(BaseClass):
 
     def test_e2e(self):
-
-
-
-
-
-        self.driver.find_element(By.CSS_SELECTOR, "a[href*='shop']").click()
+        homePage = HomePage(self.driver)
+        homePage.shopItems().click()
         cards = self.driver.find_elements(By.CSS_SELECTOR, ".card-title a")
 
 
