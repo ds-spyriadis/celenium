@@ -1,5 +1,7 @@
 from selenium.webdriver.common.by import By
 
+from pageObjects.ConfirmPage import ConfirmPage
+
 
 class CheckOutPage:
     def __init__(self,driver):
@@ -34,4 +36,6 @@ class CheckOutPage:
         return self.driver.find_element(*CheckOutPage.presentCountry)
 
     def getCountry(self):
-        return self.driver.find_element(*CheckOutPage.country)
+        self.driver.find_element(*CheckOutPage.country).click()
+        confirmpage = ConfirmPage(self.driver)
+        return confirmpage
