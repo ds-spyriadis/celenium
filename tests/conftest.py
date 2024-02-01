@@ -3,10 +3,7 @@ from selenium import webdriver
 
 
 def pytest_addoption(parser):                 # psaxnei gia browser input
-    parser.addoption(
-        "--browser_name", action="store", default="chrome"
-    )
-
+    parser.addoption("--browser_name", action="store", default="chrome")
 
 @pytest.fixture(scope="class")
 def setup(request):                     #    ->   otan kanoume decrare ena fixture exoume kai ena request instance
@@ -18,7 +15,6 @@ def setup(request):                     #    ->   otan kanoume decrare ena fixtu
         driver = webdriver.Edge()
     elif browser_name == "IE":
         print("IE Driver")
-
 
     driver.get("https://rahulshettyacademy.com/angularpractice/")
     driver.maximize_window()

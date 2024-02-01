@@ -2,9 +2,7 @@ import pytest
 import time
 from selenium.webdriver.common.by import By
 from tests.utilities.BaseClass import BaseClass
-from pageObjects.CheckoutPage import CheckOutPage
 from pageObjects.HomePage import HomePage
-# from selenium.webdriver.support import expected_conditions as EC
 
 
 
@@ -29,11 +27,9 @@ class TestOne(BaseClass):
         checkOutPage.checkOutItems().click()
         checkOutPage.getPresentCountry().send_keys("ind")
 
-        time.sleep(10)
-        #element = EC.presence_of_element_located((By.LINK_TEXT, "India"))
-        # element = webDriverWait(self.driver,10).until(EC.presence_of_element_located((By.LINK_TEXT, "India")))
+        self.verifyLinkPresence("India")  # sent it to baseclass to find the element presence
 
-        confirmpage = checkOutPage.getCountry()   # se auto to shmeio aplos epistrefw to antikeimeno, alla ta find 8a ta ektelesw edw 
+        confirmpage = checkOutPage.getCountry()   # se auto to shmeio aplos epistrefw to antikeimeno, alla ta find 8a ta ektelesw edw
         self.driver.find_element(By.XPATH, "//div[@class='checkbox checkbox-primary']").click()
         self.driver.find_element(By.CSS_SELECTOR,  "[type='submit']").click()
         textMatch = self.driver.find_element(By.CSS_SELECTOR, "[class*='alert-success']").text

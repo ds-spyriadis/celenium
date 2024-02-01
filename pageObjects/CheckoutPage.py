@@ -21,20 +21,15 @@ class CheckOutPage:
 
 
     def getCardTitles(self):
-        return self.driver.find_elements(*CheckOutPage.cardTitle) # epeidh eiani tupple vazw to asteraki gia na kanei diserialized
-
-
+        return self.driver.find_elements(*CheckOutPage.cardTitle) # epeidh einai tupple vazw to asteraki gia na kanei diserialized
     def getCardFooter(self):
         return self.driver.find_elements(*CheckOutPage.cardFooter)
-
     def checkOutItems(self):
         return self.driver.find_element(*CheckOutPage.checkOut)
-
     def getItems(self):
         return self.driver.find_element(*CheckOutPage.getButton)
     def getPresentCountry(self):
         return self.driver.find_element(*CheckOutPage.presentCountry)
-
     def getCountry(self):
         self.driver.find_element(*CheckOutPage.country).click()
         confirmpage = ConfirmPage(self.driver)
