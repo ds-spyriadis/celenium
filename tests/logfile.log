@@ -1,0 +1,33 @@
+2024-02-02 16:33:34,600 :INFO : test_e2e :getting all the card titles
+2024-02-02 16:33:34,665 :INFO : test_e2e :iphone X
+2024-02-02 16:33:34,685 :INFO : test_e2e :Samsung Note 8
+2024-02-02 16:33:34,702 :INFO : test_e2e :Nokia Edge
+2024-02-02 16:33:34,720 :INFO : test_e2e :Blackberry
+2024-02-02 16:33:35,053 :INFO : test_e2e :Entering country name as ind
+2024-02-02 16:37:20,989 :INFO : test_formSubmission :first name isRahul
+2024-02-02 16:37:21,907 :INFO : test_formSubmission :first name ismakis
+2024-02-02 16:37:21,907 :INFO : test_formSubmission :first name ismakis
+2024-02-02 16:37:28,225 :INFO : test_e2e :getting all the card titles
+2024-02-02 16:37:28,274 :INFO : test_e2e :iphone X
+2024-02-02 16:37:28,288 :INFO : test_e2e :Samsung Note 8
+2024-02-02 16:37:28,303 :INFO : test_e2e :Nokia Edge
+2024-02-02 16:37:28,315 :INFO : test_e2e :Blackberry
+2024-02-02 16:37:28,626 :INFO : test_e2e :Entering country name as ind
+2024-02-02 16:45:45,925 :INFO : test_formSubmission :first name isRahul
+2024-02-02 16:45:46,832 :INFO : test_formSubmission :first name ismakis
+2024-02-02 16:45:46,832 :INFO : test_formSubmission :first name ismakis
+2024-02-02 16:45:53,168 :INFO : test_e2e :getting all the card titles
+2024-02-02 16:45:53,225 :INFO : test_e2e :iphone X
+2024-02-02 16:45:53,242 :INFO : test_e2e :Samsung Note 8
+2024-02-02 16:45:53,263 :INFO : test_e2e :Nokia Edge
+2024-02-02 16:45:53,284 :INFO : test_e2e :Blackberry
+2024-02-02 16:45:53,650 :INFO : test_e2e :Entering country name as ind
+2024-02-02 17:04:19,377 :INFO : test_formSubmission :first name isRahul
+2024-02-02 17:04:21,547 :INFO : test_formSubmission :first name ismakis
+2024-02-02 17:04:21,547 :INFO : test_formSubmission :first name ismakis
+2024-02-02 17:04:32,074 :INFO : test_e2e :getting all the card titles
+2024-02-02 17:04:32,138 :INFO : test_e2e :iphone X
+2024-02-02 17:04:32,153 :INFO : test_e2e :Samsung Note 8
+2024-02-02 17:04:32,167 :INFO : test_e2e :Nokia Edge
+2024-02-02 17:04:32,184 :INFO : test_e2e :Blackberry
+2024-02-02 17:04:32,552 :INFO : test_e2e :Entering country name as ind

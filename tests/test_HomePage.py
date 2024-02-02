@@ -11,8 +11,10 @@ from tests.utilities.BaseClass import BaseClass
 class TestHomePage(BaseClass):  # se ka8e pytest  h clash prepei na 3ekinaei me onoma Test
 
     def test_formSubmission(self,getData):       # h getdata exei ta dedomena apo to fixture
+        log = self.getLogger()
 
         homepage = HomePage(self.driver)
+        log.info("first name is" + getData["name"])
         homepage.getName().send_keys(getData["name"])      # <=> self.driver.find_element(By.CSS_SELECTOR, "[name='name']").send_keys("Dimitris")
         homepage.getEmail().send_keys(getData["lastname"])
         homepage.getCheckBox().click()
